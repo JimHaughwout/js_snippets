@@ -1,27 +1,26 @@
 function isPositive(x) {
-	if (x > 0)
-		return true;
-	else
-		return false;
+  if (x > 0)
+    return true;
+  else
+    return false;
 }
 
 
 function isOdd(x) {
-	if (Math.abs(x) % 2 == 1)
-		return true;
-	else
-		return false;
+  if (Math.abs(x) % 2 == 1)
+    return true;
+  else
+    return false;
 }
 
 function filter(array, test) {
-	var passed = [];
-	for (var i = 0; i < array.length; i++) {
-		if (test(array[i]))
-			passed.push(array[i]);
-	}
-	return passed;
+  var passed = [];
+  for (var i = 0; i < array.length; i++) {
+    if (test(array[i]))
+      passed.push(array[i]);
+  }
+  return passed;
 }
-
 
 
 var mixed = [5, -2, -1, 0, 2, 3]
